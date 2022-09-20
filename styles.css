@@ -38,7 +38,7 @@ h1 {
 h1:before {
   margin-top: 1rem;
   font: 4rem "Pacifico", cursive;
-  content: "Press Any Key To Start The Game";
+  content: "Tap or Press Any Key To Start The Game";
   font-weight: bold;
   text-align: center;
   height: 100%;
@@ -188,7 +188,7 @@ div.lens:hover {
     padding-bottom: 1rem;
   }
 }
-}
+
 
 .game-over {
   background-image: linear-gradient(0deg, rgba(255, 10, 4, 1) 20%, rgba(255, 26, 31, 1) 70%);
