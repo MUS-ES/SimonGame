@@ -1,4 +1,4 @@
-// A useful array, helping us in detecting the collours in the very next code by inserting the name of our coloured lens
+// An useful array, helping us in detecting the collours in the very next code by inserting the name of our coloured lens
 var buttonColours = ["green", "red", "yellow", "blue"];
 // this array is useful when the computer is trying to generate a random lens click which we will randomly save the very new random lens click in this array
 var gamePattern = [];
@@ -19,6 +19,18 @@ $(".lens").click(function() {
 
 // whenever it detects a keypress it will trigger this anonymouse call-back function which will check for the game if it starts and then it will call the function nextSequence
 $(document).keydown(function() {
+  if (!started) {
+    $("h1").text("Level " + level);
+    $('<style>h1:before{content:"Level ' + level + '"}</style>').appendTo('head');
+    setTimeout(function() {
+      nextSequence();
+    }, 1000);
+    started = true;
+  }
+});
+
+// This Event is for Touch Screens
+$(document).on("tap" ,function() {
   if (!started) {
     $("h1").text("Level " + level);
     $('<style>h1:before{content:"Level ' + level + '"}</style>').appendTo('head');
