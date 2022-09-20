@@ -92,7 +92,7 @@ function checkAnswer(currentLevel) {
       $('<style>h1:before{content: "Game Over, Press Any Key to Restart"}</style>').appendTo('head');
       restartGame();
     }
-}
+} 
 
 function restartGame() {
     level = 0;
