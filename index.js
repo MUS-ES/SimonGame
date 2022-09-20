@@ -30,18 +30,6 @@ $(document).keydown(function() {
 });
 
 // This Event is for Touch Screens
-$(document).on("tap" ,function() {
-  if (!started) {
-    $("h1").text("Level " + level);
-    $('<style>h1:before{content:"Level ' + level + '"}</style>').appendTo('head');
-    setTimeout(function() {
-      nextSequence();
-    }, 1000);
-    started = true;
-  }
-});
-
-// This Event is for Touch Screens
 $("h1").on("touchmove" ,function() {
   if (!started) {
     $("h1").text("Level " + level);
