@@ -38,7 +38,7 @@ h1 {
 h1:before {
   margin-top: 1rem;
   font: 4rem "Pacifico", cursive;
-  content: "Tap or Press Any Key To Start The Game";
+  content: "Press Any Key To Start The Game";
   font-weight: bold;
   text-align: center;
   height: 100%;
